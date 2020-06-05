@@ -4,10 +4,12 @@ fetch("http://sandbox.bittsdevelopment.com/code1/fetchemployees.php#")
   .then((response) => response.json())
   //   convert json to a javascript object
   .then((data) => {
-    getEmployees(data, 3);
+    dataLength = Object.keys(data).length;
+    getEmployees(data, dataLength);
   })
   .catch((err) => console.log(err));
 
+// the function to create the interface
 function getEmployees(employees, numberOfEmployees) {
   // grab the #wrapper from the html
   let wrapper = document.querySelector("#wrapper");
