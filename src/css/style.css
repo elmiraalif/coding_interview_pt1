@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #d4e0e1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  text-decoration: underline;
+  color: #83a3a6;
+}
+a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+#wrapper {
+  width: 80%;
+  padding: 4rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 300px;
+  height: 450px;
+  background: #262730;
+  margin: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+.box h3 {
+  align-self: flex-start;
+  padding: 0 1rem;
+}
+
+.portrait {
+  border-radius: 50%;
+  max-width: 143px;
+  height: 143px;
+  border: 3px solid #acf7e2;
+}
+.portrait img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.roles {
+  width: fit-content;
+  float: left;
+  align-self: flex-start;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.role-cell {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem 0;
+  color: #262730;
+}
+
+.is-featured {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 50px;
+  height: 50px;
+}
+.is-featured img {
+  max-width: 50px;
+  width: 100%;
+}
